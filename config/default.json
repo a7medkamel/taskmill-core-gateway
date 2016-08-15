@@ -1,0 +1,23 @@
+{
+  "www" : {
+    "port"              : 8070
+  },
+  "universal-analytics" : {
+    "id"                : "***REMOVED***"
+  },
+  "agent" : {
+    "group-id"          : "***REMOVED***"
+  },
+  "tty" : {
+    "url"               : "https://breadboard.io"
+  },
+  "log" : {
+    "url"               : "http://log.breadboard.io:8787"
+  },
+  "relay"               : "http://relay.breadboard.io:8124",
+  "tunnel"              : "http://relay.breadboard.io:8989",
+  "codedb" : {
+    "url"               : "http://code.breadboard.io:8585",
+    "ttl"               : 86400
+  }
+}

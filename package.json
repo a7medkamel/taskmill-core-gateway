@@ -1,0 +1,30 @@
+{
+  "name": "taskmill-core-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a7medkamel/taskmill-core-gateway.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a7medkamel/taskmill-core-gateway/issues"
+  },
+  "homepage": "https://github.com/a7medkamel/taskmill-core-gateway#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "config-url": "git+https://github.com/a7medkamel/config-url.git",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "lodash": "^4.6.1",
+    "taskmill-core-relay": "git+https://github.com/a7medkamel/taskmill-core-relay.git",
+    "universal-analytics": "^0.4.2",
+    "url-join": "^1.1.0",
+    "winston": "^2.2.0"
+  }
+}
