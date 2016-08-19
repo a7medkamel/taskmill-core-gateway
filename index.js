@@ -74,9 +74,9 @@ app.all('/*', (req, res, next) => {
         _.extend(data, route);
 
         // todo [akamel] for some reason we need to disable .end for https to work...
-        res.end = () => {
-          // console.trace('end');
-        }
+        // res.end = () => {
+        //   // console.trace('end');
+        // }
  
         relay.emit(data, req, res);
       });
