@@ -1,5 +1,5 @@
 {
-  "www" : {
+  "gateway" : {
     "port"              : 8070
   },
   "universal-analytics" : {
