@@ -9,7 +9,7 @@ let github = {
 module.exports = {
   gateway : {
     ssl : {
-        'github' : github
+        // 'github' : github
     }
   }
 };
