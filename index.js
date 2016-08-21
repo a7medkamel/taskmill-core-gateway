@@ -5,6 +5,7 @@ var Promise       = require('bluebird')
   , winston       = require('winston')
   , _             = require('lodash')
   , cors          = require('cors')
+  , responseTime  = require('response-time')
   , config        = require('config-url')
   , Relay         = require('taskmill-core-relay').Relay
   , parser        = require('./lib/parser')
@@ -16,6 +17,8 @@ var Promise       = require('bluebird')
 var app = express();
 
 var relay = new Relay();
+
+app.use(responseTime());
 
 app.use((req, res, next) => {
   req.visitor = ua(config.get('universal-analytics.id'));//.debug();
