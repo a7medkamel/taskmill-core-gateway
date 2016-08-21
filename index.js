@@ -122,7 +122,7 @@ function main() {
   } else {
     let http_server = http.createServer(app);
 
-    http_server.listen(config.get('gateway.port'), function() {
+    http_server.listen(config.get('gateway.port') + 1, function() {
       let port = this.address().port;
       winston.info('taskmill-core-gateway [started] :http://localhost:%d', port);
     });
