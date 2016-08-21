@@ -14,8 +14,8 @@
   "log" : {
     "url"               : "http://log.breadboard.io:8787"
   },
-  "relay"               : "http://relay.breadboard.io:8124",
-  "tunnel"              : "http://relay.breadboard.io:8989",
+  "relay"               : "http://foobar.run:8124",
+  "tunnel"              : "http://foobar.run:8989",
   "codedb" : {
     "url"               : "http://code.breadboard.io:8585",
     "ttl"               : 86400
