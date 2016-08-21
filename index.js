@@ -12,6 +12,7 @@ var Promise       = require('bluebird')
   , ua            = require('universal-analytics')
   , http          = require('http')
   , https         = require('https')
+  , Profiler      = require('step-profiler')
   ;
 
 var app = express();
@@ -38,11 +39,14 @@ app.get('/', (req, res) => {
 
 app.all('/*', (req, res, next) => {
   // todo [akamel] this doesn't take port nto account
+  req.profiler = new Profiler({});
+  req.profiler.start('req');
   Promise
     .try(() => {
       return parser.parse(req.hostname, req.path);
     })
     .then((route) => {
+      req.profiler.done('reoute.parse');
       if (!route) {
         return res.end();
       }
@@ -81,6 +85,7 @@ app.all('/*', (req, res, next) => {
         //   // console.trace('end');
         // }
  
+        req.profiler.done('gateway.emit.pre');
         relay.emit(data, req, res);
       });
     })
