@@ -99,34 +99,40 @@ function main() {
   //   winston.info('taskmill-core-gateway [started] :http://localhost:%d', port);
   // });
 
-  if (config.has('gateway.ssl.github.cert')) {
-    let https_server = https.createServer({
-                          key   : config.get('gateway.ssl.github.key')
-                        , cert  : config.get('gateway.ssl.github.cert')
-                        , ca    : config.has('gateway.ssl.github.ca')? config.get('gateway.ssl.github.ca') : undefined
-                      }, app);
+  // if (config.has('gateway.ssl.github.cert')) {
+  //   let https_server = https.createServer({
+  //                         key   : config.get('gateway.ssl.github.key')
+  //                       , cert  : config.get('gateway.ssl.github.cert')
+  //                       , ca    : config.has('gateway.ssl.github.ca')? config.get('gateway.ssl.github.ca') : undefined
+  //                     }, app);
 
-    https_server.listen(config.get('gateway.port'), function() {
-      let port = this.address().port;
-      winston.info('taskmill-core-gateway [started] :https://localhost:%d', port);
-    });
+  //   https_server.listen(config.get('gateway.port'), function() {
+  //     let port = this.address().port;
+  //     winston.info('taskmill-core-gateway [started] :https://localhost:%d', port);
+  //   });
 
-    let http_server = http.createServer((req, res) => {
-      res.end();
-    });
+  //   let http_server = http.createServer((req, res) => {
+  //     res.end();
+  //   });
 
-    http_server.listen(config.get('gateway.port') + 1, function() {
+  //   http_server.listen(config.get('gateway.port') + 1, function() {
+  //     let port = this.address().port;
+  //     winston.info('taskmill-core-gateway [started] :http://localhost:%d', port);
+  //   });
+  // } else {
+  //   let http_server = http.createServer(app);
+
+  //   http_server.listen(config.get('gateway.port') + 1, function() {
+  //     let port = this.address().port;
+  //     winston.info('taskmill-core-gateway [started] :http://localhost:%d', port);
+  //   });
+  // }
+  let http_server = http.createServer(app);
+
+    http_server.listen(config.get('gateway.port'), function() {
       let port = this.address().port;
       winston.info('taskmill-core-gateway [started] :http://localhost:%d', port);
     });
-  } else {
-    let http_server = http.createServer(app);
-
-    http_server.listen(config.get('gateway.port') + 1, function() {
-      let port = this.address().port;
-      winston.info('taskmill-core-gateway [started] :http://localhost:%d', port);
-    });
-  }
 }
 
 main();
