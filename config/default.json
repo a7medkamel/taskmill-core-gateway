@@ -12,7 +12,7 @@
     "url"               : "https://breadboard.io"
   },
   "log" : {
-    "url"               : "http://log.breadboard.io:8787"
+    "url"               : "http://logs.breadboard.io:8787"
   },
   "relay"               : "http://foobar.run:8124",
   "tunnel"              : "http://foobar.run:8989",
