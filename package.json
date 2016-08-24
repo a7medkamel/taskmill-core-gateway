@@ -24,7 +24,7 @@
     "lodash": "^4.6.1",
     "response-time": "^2.3.1",
     "step-profiler": "^0.3.0",
-    "taskmill-core-relay": "git+https://github.com/a7medkamel/taskmill-core-relay.git#gateway",
+    "taskmill-core-relay": "git+https://github.com/a7medkamel/taskmill-core-relay.git",
     "universal-analytics": "^0.4.2",
     "url-join": "^1.1.0",
     "winston": "^2.2.0"

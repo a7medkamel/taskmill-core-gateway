@@ -15,6 +15,11 @@ var Promise       = require('bluebird')
   , Profiler      = require('step-profiler')
   ;
 
+process.on('uncaughtException', function (err) {
+  console.error(new Date().toUTCString(), 'uncaughtException', err.message);
+  console.error(err.stack);
+});
+
 var app = express();
 
 var relay = new Relay();
