@@ -15,9 +15,25 @@
     "url"               : "http://logs.breadboard.io:8787"
   },
   "relay"               : "http://foobar.run:8124",
-  "tunnel"              : "http://foobar.run:8989",
+  "account"             : {
+    "url"               : "http://account.breadboard.io:8050"
+  },
   "codedb" : {
     "url"               : "http://code.breadboard.io:8585",
     "ttl"               : 86400
+  },
+  "metering" : {
+    "limits" : {
+      "email" : 50,
+      "sms"   : 10,
+      "phone" : 5,
+      "run"   : 50000
+    },
+    "redis" : {
+      "host"      : "***REMOVED***",
+      "port"      : 6379,
+      "password"  : "***REMOVED***",
+      "db"        : 2
+    }
   }
 }
