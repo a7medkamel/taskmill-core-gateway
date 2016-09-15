@@ -8,5 +8,6 @@
   "log" : {
     "url"               : "http://localhost:8787"
   },
-  "relay"               : "http://localhost:8124"
+  "relay"               : "http://localhost:8124",
+  "account"             : "http://localhost:8050"
 }

@@ -16,7 +16,7 @@
   },
   "relay"               : "http://foobar.run:8124",
   "account"             : {
-    "url"               : "http://account.breadboard.io:8050"
+    "url"               : "http://account.breadboard.io"
   },
   "metering" : {
     "limits" : {
