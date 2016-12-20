@@ -3,10 +3,10 @@
     "port"              : 8070
   },
   "universal-analytics" : {
-    "id"                : "***REMOVED***"
+    "id"                : null
   },
   "agent" : {
-    "group-id"          : "***REMOVED***"
+    "group-id"          : "[GROUP_ID]"
   },
   "tty" : {
     "url"               : "https://breadboard.io"
@@ -26,9 +26,9 @@
       "run"   : 50000
     },
     "redis" : {
-      "host"      : "***REMOVED***",
+      "host"      : "[REDIS_HOST]",
       "port"      : 6379,
-      "password"  : "***REMOVED***",
+      "password"  : "[REDIS_PASSWORD]",
       "db"        : 2
     }
   }
