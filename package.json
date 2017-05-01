@@ -38,6 +38,7 @@
     "taskmill-api-metering": "git+https://github.com/a7medkamel/taskmill-api-metering.git",
     "universal-analytics": "^0.4.2",
     "url-join": "^1.1.0",
+    "uuid-parse": "^1.0.0",
     "weighted": "^0.3.0",
     "winston": "^2.2.0"
   }
