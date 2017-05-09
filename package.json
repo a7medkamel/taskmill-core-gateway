@@ -33,7 +33,6 @@
     "response-time": "^2.3.2",
     "sha1": "^1.1.1",
     "socket.io": "^1.7.3",
-    "step-profiler": "^0.3.0",
     "taskmill-api-metering": "git+https://github.com/a7medkamel/taskmill-api-metering.git",
     "universal-analytics": "^0.4.13",
     "url-join": "^2.0.1",
