@@ -32,6 +32,7 @@
     "response-time": "^2.3.2",
     "sha1": "^1.1.1",
     "socket.io": "^1.7.3",
+    "step-profiler": "^0.3.0",
     "taskmill-api-metering": "git+https://github.com/a7medkamel/taskmill-api-metering.git",
     "taskmill-core-git": "git+https://github.com/a7medkamel/taskmill-core-git.git",
     "universal-analytics": "^0.4.13",
