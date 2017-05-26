@@ -18,6 +18,9 @@
   "account"             : {
     "url"               : "http://account.breadboard.io"
   },
+  "codedb" : {
+    "url"             : "http://code.breadboard.io:8585"
+  },
   "metering" : {
     "limits" : {
       "email" : 50,

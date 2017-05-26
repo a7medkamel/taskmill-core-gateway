@@ -19,6 +19,7 @@
   "dependencies": {
     "auth-header": "^0.3.1",
     "bluebird": "^3.5.0",
+    "cache-manager": "^2.4.0",
     "config-url": "git+https://github.com/a7medkamel/config-url.git",
     "content-type": "^1.0.2",
     "cors": "^2.8.3",
@@ -35,6 +36,7 @@
     "step-profiler": "^0.3.0",
     "taskmill-api-metering": "git+https://github.com/a7medkamel/taskmill-api-metering.git",
     "taskmill-core-git": "git+https://github.com/a7medkamel/taskmill-core-git.git",
+    "taskmill-core-codedb-sdk": "git+https://github.com/a7medkamel/taskmill-core-codedb-sdk.git",
     "universal-analytics": "^0.4.13",
     "url-join": "^2.0.1",
     "uuid-parse": "^1.0.0",
