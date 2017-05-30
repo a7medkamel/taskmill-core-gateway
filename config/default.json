@@ -21,6 +21,14 @@
   "codedb" : {
     "url"             : "http://code.breadboard.io:8585"
   },
+  "worker" : {
+    "redis" : {
+      "host"      : "[REDIS_HOST]",
+      "port"      : 6379,
+      "password"  : "[REDIS_PASSWORD]",
+      "db"        : 4
+    }
+  },
   "metering" : {
     "limits" : {
       "email" : 50,
