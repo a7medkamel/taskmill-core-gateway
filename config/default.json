@@ -19,10 +19,10 @@
     "url"               : "http://account.breadboard.io"
   },
   "codedb" : {
-    "url"             : "http://code.breadboard.io:8585"
+    "url"               : "http://code.breadboard.io:8585"
   },
-  "worker" : {
-    "redis" : {
+  "make" : {
+    "redis"             : {
       "host"      : "[REDIS_HOST]",
       "port"      : 6379,
       "password"  : "[REDIS_PASSWORD]",
