@@ -32,7 +32,6 @@
     "request-promise": "^4.2.0",
     "response-time": "^2.3.2",
     "sha1": "^1.1.1",
-    "socket.io": "^1.7.3",
     "step-profiler": "^0.3.0",
     "taskmill-api-metering": "git+https://github.com/a7medkamel/taskmill-api-metering.git",
     "taskmill-core-codedb-sdk": "git+https://github.com/a7medkamel/taskmill-core-codedb-sdk.git",
@@ -42,7 +41,6 @@
     "universal-analytics": "^0.4.13",
     "url-join": "^2.0.1",
     "uuid-parse": "^1.0.0",
-    "weighted": "^0.3.0",
     "winston": "^2.3.1"
   }
 }
