@@ -19,17 +19,18 @@
   "dependencies": {
     "auth-header": "^0.3.1",
     "bluebird": "^3.5.1",
-    "cache-manager": "^2.5.0",
+    "cache-manager": "^2.9.0",
     "config-url": "git+https://github.com/a7medkamel/config-url.git",
     "content-type": "^1.0.4",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
-    "lodash": "^4.17.4",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
     "morgan": "^1.9.0",
-    "ms": "^2.0.0",
+    "ms": "^2.1.1",
     "on-finished": "^2.3.0",
     "parse-cache-control": "^1.0.1",
     "rand-token": "^0.4.0",
+    "request-ip": "^2.0.2",
     "request-promise": "^4.2.2",
     "response-time": "^2.3.2",
     "sha1": "^1.1.1",
@@ -39,9 +40,9 @@
     "taskmill-core-codedb-sdk": "git+https://github.com/a7medkamel/taskmill-core-codedb-sdk.git",
     "taskmill-core-git": "git+https://github.com/a7medkamel/taskmill-core-git.git",
     "taskmill-core-make-sdk": "git+https://github.com/a7medkamel/taskmill-core-make-sdk.git",
-    "universal-analytics": "^0.4.15",
-    "url-join": "^2.0.2",
+    "universal-analytics": "^0.4.17",
+    "url-join": "^4.0.0",
     "uuid-parse": "^1.0.0",
-    "winston": "^2.4.0"
+    "winston": "^3.0.0"
   }
 }

@@ -20,5 +20,13 @@
     "url"               : "http://localhost:8585"
   },
   "relay"               : "http://localhost:8124",
-  "account"             : "http://localhost:8050"
+  "account"             : "http://localhost:8050",
+  "metering" : {
+    "redis" : {
+      "host"      : "localhost",
+      "port"      : 6379,
+      "password"  : null,
+      "db"        : 2
+    }
+  }
 }
