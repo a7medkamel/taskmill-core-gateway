@@ -14,16 +14,9 @@
   "universal-analytics" : {
     "id"                : null
   },
-  "agent" : {
-    "group-id"          : "[GROUP_ID]"
-  },
   "tty" : {
     "url"               : "https://breadboard.io"
   },
-  "log" : {
-    "url"               : "http://logs.breadboard.io:8787"
-  },
-  "relay"               : "http://foobar.run:8124",
   "account"             : {
     "url"               : "http://account.breadboard.io"
   },
