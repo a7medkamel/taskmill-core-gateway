@@ -14,9 +14,6 @@
   "universal-analytics" : {
     "id"                : null
   },
-  "tty" : {
-    "url"               : "https://breadboard.io"
-  },
   "account"             : {
     "url"               : "http://account.breadboard.io"
   },

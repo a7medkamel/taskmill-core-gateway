@@ -7,12 +7,6 @@
       "port": 6379
     }
   },
-  "agent" : {
-    "group-id"          : "64FD1450-AD09-4643-9A8E-CEB571DF0FE9"
-  },
-  "tty" : {
-    "url"               : "http://localhost:1337"
-  },
   "codedb" : {
     "url"               : "http://localhost:8585"
   },
