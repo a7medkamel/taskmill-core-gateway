@@ -1,6 +1,10 @@
 {
+  "hub" : {
+    "aud"               : "",
+    "sub"               : "",
+    "key_pem"           : ""
+  },
   "make" : {
-    "url" : "http://make.breadboard.io:8075",
     "redis" : {
       "host"      : "[REDIS_HOST]",
       "port"      : 6379,
