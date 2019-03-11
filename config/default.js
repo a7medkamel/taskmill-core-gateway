@@ -5,22 +5,22 @@ var bytes = require('bytes')
 
 module.exports = {
   "hub" : {
-    "aud"               : "",// fs.readFileSync('/run/secrets/hub/aud', 'utf-8'),
-    "sub"               : "",// fs.readFileSync('/run/secrets/hub/sub', 'utf-8'),
-    "key_pem"           : "",// fs.readFileSync('/run/secrets/hub/key.pem', 'utf-8')
+    "aud"               : _.trim(fs.readFileSync('/run/secrets/hub/aud', 'utf-8')),
+    "sub"               : _.trim(fs.readFileSync('/run/secrets/hub/sub', 'utf-8')),
+    "key_pem"           : _.trim(fs.readFileSync('/run/secrets/hub/key.pem', 'utf-8'))
   },
   "gateway" : {
     "port"              : 8070,
     "timeout"           : ms('5m')
   },
   "universal-analytics" : {
-    "id"                : null,// fs.readFileSync('/run/secrets/universal-analytics/id', 'utf-8')
+    "id"                : fs.readFileSync('/run/secrets/universal-analytics/id', 'utf-8')
   },
   "account"             : {
-    "url"               : "http://localhost:8050"
+    "url"               : "https://account.breadboard.io"
   },
   "codedb" : {
-    "url"               : "http://localhost:8585"
+    "url"               : "http://code.breadboard.xyz:8585"
   },
   "metering" : {
     "limits" : {
@@ -29,7 +29,7 @@ module.exports = {
       "0748897a12015c876ea4c657dbe2eacd610d92da60a9143ee139bdf23f509a86" : 10
     },
     "redis" : {
-      "host"      : "localhost",
+      "host"      : "metering.redis.breadboard.xyz",
       "port"      : 6379,
       "password"  : null,
       "db"        : 0
