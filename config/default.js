@@ -1,6 +1,7 @@
 var bytes = require('bytes')
   , fs    = require('fs')
   , ms    = require('ms')
+  , _     = require('lodash')
   ;
 
 module.exports = {
